@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdulKarim018 - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Web Developer specializing in React, Node.js, and modern web technologies">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi there! 👋 I'm 
+                        <span class="gradient-text">AbdulKarim</span>
+                    </h1>
+                    <p class="hero-subtitle">Full Stack Web Developer</p>
+                    <p class="hero-description">
+                        Passionate about creating modern, scalable web applications with 
+                        cutting-edge technologies. Let's build something amazing together!
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="https://github.com/AbdulKarim018" class="btn btn-secondary" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            View Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <div class="dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="filename">developer.js</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'AbdulKarim'</span>,
+  <span class="property">skills</span>: [<span class="string">'React'</span>, <span class="string">'Node.js'</span>, <span class="string">'TypeScript'</span>],
+  <span class="property">passion</span>: <span class="string">'Building amazing web apps'</span>,
+  <span class="property">status</span>: <span class="string">'Available for collaboration'</span>
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Technologies Section -->
+            <section class="technologies">
+                <h2 class="section-title">Technologies & Skills</h2>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <div class="tech-items">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Backend</h3>
+                        <div class="tech-items">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Express.js</span>
+                            <span class="tech-badge">Prisma</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Tools & More</h3>
+                        <div class="tech-items">
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">GraphQL</span>
+                            <span class="tech-badge">Zod</span>
+                            <span class="tech-badge">ShadcnUI</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Newsletter Section -->
+                <div class="footer-section newsletter-section">
+                    <h3 class="section-title">Stay Connected</h3>
+                    <p class="section-description">
+                        Get updates on my latest projects and web development insights.
+                    </p>
+                    
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input 
+                                    type="text" 
+                                    id="fullName" 
+                                    name="fullName" 
+                                    placeholder="Your Full Name" 
+                                    required
+                                    class="form-input"
+                                >
+                                <label for="fullName" class="form-label">Full Name</label>
+                            </div>
+                            <div class="input-error" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="your.email@example.com" 
+                                    required
+                                    class="form-input"
+                                >
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="input-error" id="emailError"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-loader">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                            <span class="btn-success">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thank you for subscribing! You'll hear from me soon.</span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section contact-section">
+                    <h3 class="section-title">Contact Information</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>abdul.karim.dev@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Available Worldwide (Remote)</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Fri, 9:00 AM - 6:00 PM GMT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-section social-section">
+                    <h3 class="section-title">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/AbdulKarim018" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/abdulkarim018" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/abdulkarim018" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="mailto:abdul.karim.dev@example.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section links-section">
+                    <h3 class="section-title">Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="#privacy" class="quick-link">Privacy Policy</a>
+                        <a href="#terms" class="quick-link">Terms of Service</a>
+                        <a href="#portfolio" class="quick-link">Portfolio</a>
+                        <a href="#blog" class="quick-link">Blog</a>
+                        <a href="#contact" class="quick-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 AbdulKarim. All rights reserved.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span>Made with <i class="fas fa-heart"></i> and lots of ☕</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
